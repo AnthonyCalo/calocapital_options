@@ -1,0 +1,20 @@
+# Core data and analysis
+pandas==2.2.3
+numpy==1.26.4
+
+# Finance APIs
+yfinance==0.2.48
+alpha_vantage==3.0.0
+requests==2.32.3
+
+# Visualization
+matplotlib==3.9.2
+seaborn==0.13.2
+
+# Dev & utilities
+jupyterlab==4.2.5
+tqdm==4.66.5
+
+# Modeling / stats
+scikit-learn==1.5.2
+statsmodels==0.14.3
