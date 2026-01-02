@@ -1,16 +1,13 @@
 # Simple Makefile: create venv and install requirements
-
-VENV := venv
-PYTHON := python3
-PIP := $(VENV)/bin/pip
+VENV=.venv
+PYTHON=python3
+PIP=$(VENV)/bin/pip
 
 venv:
 	@echo "Creating virtual environment..."
-	$(PYTHON) -m venv $(VENV)
-	@echo "Upgrading pip and installing dependencies..."
+	$(PYTHON) -m venv $(VENV) --prompt finance
 	$(PIP) install --upgrade pip
 	if [ -f requirements.txt ]; then $(PIP) install -r requirements.txt; fi
-	@echo "✅ Virtual environment ready and dependencies installed."
 
 clean:
 	rm -rf $(VENV)
